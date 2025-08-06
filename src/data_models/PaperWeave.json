@@ -1,0 +1,174 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": -61.743333155120176,
+        "y": -23.900645092304586
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "Paper"
+      ],
+      "properties": {
+        "arxiv_id": "STRING",
+        "title": "STRING",
+        "abstract": "STRING",
+        "submitter": "STRING",
+        "journel-ref": "STRING",
+        "doi": "STRING",
+        "report-no": "STRING",
+        "license": "STRING",
+        "update_date": "DATE"
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": -320.1865758780229,
+        "y": 234.54259763059818
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#f44e3b"
+      },
+      "labels": [
+        "Author"
+      ],
+      "properties": {
+        "name": "STRING"
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 303.7506058072906,
+        "y": -23.900645092304586
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#fe9200"
+      },
+      "labels": [
+        "Category"
+      ],
+      "properties": {
+        "id": "STRING",
+        "name": "STRING"
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 71.80989966243618,
+        "y": 234.54259763059818
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#fcdc00"
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "name": "STRING"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "type": "CITES",
+      "style": {},
+      "properties": {},
+      "fromId": "n0",
+      "toId": "n0"
+    },
+    {
+      "id": "n1",
+      "type": "WROTE",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n0"
+    },
+    {
+      "id": "n2",
+      "type": "HAS_CATEGORY",
+      "style": {},
+      "properties": {},
+      "fromId": "n0",
+      "toId": "n2"
+    },
+    {
+      "id": "n3",
+      "type": "IS_AFFLIATED_WITH",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n3"
+    },
+    {
+      "id": "n4",
+      "type": "IS_PART_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n3",
+      "toId": "n3"
+    }
+  ]
+}
