@@ -4,6 +4,9 @@
 
 PaperWeave is an advanced knowledge graph platform that transforms millions of arXiv research papers into an explorable, interconnected network. By combining comprehensive data pipelines, citation analysis, and institutional connections, PaperWeave accelerates scientific discovery through intelligent paper recommendations and network analysis.
 
+![PaperWeave Knowledge Graph](assets/data.png)
+*Live visualization of the PaperWeave knowledge graph showing interconnected papers, authors, and citation relationships*
+
 ---
 
 ## 🚀 Key Achievements
